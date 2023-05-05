@@ -4,9 +4,9 @@ This is a program that can translate Racket code into Python code. It includes a
 
 ## Usage
 
-You have to have python and Lark installed onto your computer. To use the program, simply run the `racket-python-translator.py` script and enter Racket code at the prompt. The program will then display the parsed Racket code and the equivalent Python code.
+You have to have python and Lark installed onto your computer. To use the program, simply run the `racket-python-transpiler.py` script and enter Racket code at the prompt. The program will then display the parsed Racket code and the equivalent Python code.
 
-There are also sample racket files with some basic racket commands
+There are also sample racket files with some basic racket commands that can be ranned after running the python script. Simply type FILES, and a list of sample racket files will be printed. Type the name of one of the files including .rkt, and the script will attempt to run each line on the sample program.
 
 ## Racket Syntax
 
@@ -36,4 +36,4 @@ Contributions are welcome! Feel free to submit bug reports, feature requests, or
 
 ## Known Bugs
 
-
+There may be some syntax errors like simply typing in random characters into the search bar will still give you a tree and translated python code, even though it isn't racket code. The program is limited to Racket Syntax listed above. 
