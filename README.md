@@ -1,10 +1,15 @@
-# Racket to Python Transpiler
+## Language Description
 
-This is a program that can translate Racket code into Python code. It includes a parser that can convert Racket syntax into an abstract syntax tree (AST), and a set of translation rules that can convert the AST into equivalent Python code.
+The language being parsed is a subset of the Racket programming language. It includes basic arithmetic and logical operations, variable definitions, function definitions, if statements, and list operations.
+
+## Interesting Notes
+
+The grammar is defined using Lark, a parsing library for Python. The parsed Racket code is translated into equivalent Python code using a set of translation rules. The translated Python code can then be executed if you were to copy it to another file and run the script or simply run it on an online compiler.
 
 ## Usage
 
-You have to have python and Lark installed onto your computer. To use the program, simply run the `racket-python-transpiler.py` script and enter Racket code at the prompt. The program will then display the parsed Racket code and the equivalent Python code.
+Instructions for Running the Code:
+You have to have python and Lark installed onto your computer. To start the program, simply run the `racket-python-transpiler.py` script and enter Racket code at the prompt. The program will then display the parsed Racket code and the equivalent Python code.
 
 There are also sample racket files with some basic racket commands that can be ranned after running the python script. Simply type FILES, and a list of sample racket files will be printed. Type the name of one of the files including .rkt, and the script will attempt to run each line on the sample program.
 
